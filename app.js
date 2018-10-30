@@ -84,7 +84,7 @@ function getUpdate() {
                     "url": `${updateURL}`,
                     "color": 5478908,
                     "thumbnail": {
-                    "url": "https://github.com/Triniayo/node-discord-blackops4-update/blob/master/blackops4-icon.png"
+                    "url": "https://raw.githubusercontent.com/Triniayo/node-discord-blackops4-update/master/blackops4-icon.png"
                     }
                 }
             });
