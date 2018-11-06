@@ -49,7 +49,11 @@ bot.on('ready', () => {
 function getUpdate() {
     // Get current date and edit format
     let getDate = new Date();
-    let date = (getDate.getFullYear() +'-'+ (getDate.getMonth() +1) +'-'+ getDate.getDate());
+    let date = [
+        getDate.getFullYear(),
+        ('0' + (getDate.getMonth() + 1)).slice(-2),
+        ('0' + getDate.getDate()).slice(-2)
+    ].join('-');
 
     // Fetching updates from Black Ops 4 Reddit
     (async () => {
